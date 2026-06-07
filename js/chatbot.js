@@ -10,8 +10,7 @@ const GYM_CONFIG = {
   facilities:"8,000 sq ft — cardio, free weights, group classes, boxing ring",
   freeTrial:true
 };
-const GROQ_API_KEY="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";
-const GROQ_MODEL="llama-3.3-70b-versatile";
+
 const SYSTEM_PROMPT=`You are a friendly, enthusiastic AI assistant for ${GYM_CONFIG.name}.
 GYM: ${GYM_CONFIG.name} | ${GYM_CONFIG.location} | ${GYM_CONFIG.timings} | WhatsApp ${GYM_CONFIG.whatsapp}
 ${GYM_CONFIG.trainers} · ${GYM_CONFIG.members} · ${GYM_CONFIG.facilities}

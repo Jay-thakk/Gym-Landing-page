@@ -76,49 +76,7 @@
         <div class="cursor-glow"></div>
         <div id="canvas-container"></div>
 
-        <button id="chat-toggle" onclick="toggleChat()" title="Chat with AI">
-            <span class="chat-notify">1</span>
-            <svg class="icon-chat" viewBox="0 0 24 24">
-                <path
-                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 10H6v-2h12v2zm0-3H6V7h12v2z" />
-            </svg>
-            <svg class="icon-close" viewBox="0 0 24 24">
-                <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-            </svg>
-        </button>
 
-
-        <div id="chat-window">
-            <div class="chat-header">
-                <div class="chat-avatar"><svg viewBox="0 0 120 90" width="28" height="28">
-                        <use href="#bull-mark" />
-                    </svg></div>
-                <div>
-                    <div class="chat-header-name">REDBULL AI</div>
-                    <div class="chat-header-status"><span class="status-dot"></span> Online — Ask me anything!</div>
-                </div>
-            </div>
-
-            <div id="chat-messages"></div>
-            <div class="quick-replies" id="quick-replies">
-                <button class="quick-btn" onclick="quickAsk('What are your membership plans and prices?')">💪 Plans &
-                    Prices</button>
-                <button class="quick-btn" onclick="quickAsk('What are your gym timings?')">🕗 Timings</button>
-                <button class="quick-btn" onclick="quickAsk('How do I join the gym?')">✅ How to join</button>
-                <button class="quick-btn" onclick="quickAsk('Do you offer a free trial?')">🎁 Free trial</button>
-            </div>
-
-            <div class="chat-input-row">
-                <input type="text" id="chat-input" placeholder="Ask about plans, timings, trainers..."
-                    onkeydown="if(event.key==='Enter')sendMessage()" />
-                <button id="chat-send" onclick="sendMessage()">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-                    </svg>
-                </button>
-            </div>
-        </div>
 
         <nav>
             <a class="logo" href="#">
@@ -494,7 +452,6 @@
         </footer>
 
         <script src="js/main.js"></script>
-        <script src="js/chatbot.js"></script>
         <script src="js/animations.js"></script>
         <script src="js/gallery.js"></script>
         <script type="module" src="js/three-scene.js"></script>
